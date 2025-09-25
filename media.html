@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html>
 <head>
   <meta charset="UTF-8">
-  
-  <title>Media Showcase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Showcase — Deo Sparkles Essential</title>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
+  <nav aria-label="Main navigation">
     <ul>
-     <a href="index.html">Home</a>
-     <a href="about.html">About Us</a>
-     <a href="contact.html">Contact</a>
-    <a href="media.html">Media</a>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="getstarted.html">Get Started</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="media.html">Media</a></li>
     </ul>
   </nav>
 
@@ -21,29 +20,40 @@
     <h1>Collections</h1>
   </header>
 
+  <main>
+    <!-- Image Section -->
+    <section>
+      <h2>Image Showcase</h2>
 
-    <!-- Responsive image with <picture> -->
-  
-    
-<picture>
-  <source media="(min-width:650px)" srcset="images/white log piece.jpg">
-  <source media="(min-width:465px)" srcset="images/white log piece.jpg">
-  <img src="images/white log piece.jpg" alt="bead" style="width:auto;">
-</picture>
-      
- 
+      <figure>
+        <picture>
+          <source media="(min-width:650px)" srcset="images/white_log_piece_large.jpg">
+          <source media="(min-width:465px)" srcset="images/white_log_piece_medium.jpg">
+          <img src="images/white_log_piece.jpg" alt="Beaded accessory from Deo Sparkles" style="width:auto;">
+        </picture>
+        <figcaption>White beaded log piece accessory by Deo Sparkles Essential</figcaption>
+      </figure>
 
-   
-      
-     
-   
-<embed type="video/webm" src="movie.mp4" width="400" height="300">     
+    </section>
 
+    <!-- Video Section -->
+    <section>
+      <h2>Video Showcase</h2>
 
+      <figure>
+        <video controls width="400" height="300">
+          <source src="media/movie.mp4" type="video/mp4">
+          <source src="media/movie.webm" type="video/webm">
+          Your browser does not support the video element.
+        </video>
+        <figcaption>Behind-the-scenes fashion highlights video</figcaption>
+      </figure>
 
+    </section>
+  </main>
 
-
-
-
+  <footer>
+    <p>© 2025 Deo-Sparkles Essential. All rights reserved.</p>
+  </footer>
 </body>
 </html>
